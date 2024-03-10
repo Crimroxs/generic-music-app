@@ -1,7 +1,7 @@
 {
   "name": "generic-music-search-app",
   "version": "1.0.0",
-  "description": "GMSP or Generic Music Search App is just that, a music searching app that uses the [Spotify Web API](https://developer.spotify.com/documentation/web-api) to search for Artists, Albums, and Tracks.",
+  "description": "GMSA or Generic Music Search App is just that, a music searching app that uses the [Spotify Web API](https://developer.spotify.com/documentation/web-api) to search for Artists, Albums, and Tracks.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,11 +10,22 @@
   "license": "ISC",
   "dependencies": {
     "axios": "^1.6.7",
+    "bcrypt-nodejs": "^0.0.3",
     "body-parser": "^1.20.2",
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "express": "^4.18.3",
+    "form-data": "^4.0.0",
+    "mongoose": "^8.2.1",
+    "mysql2": "^3.9.2",
     "nodemon": "^3.1.0",
+    "passport": "^0.7.0",
+    "passport-jwt": "^4.0.1",
+    "passport-local": "^1.0.0",
+    "path": "^0.12.7",
+    "querystring": "^0.2.1",
+    "randomstring": "^1.3.0",
+    "request": "^2.88.2",
     "sequelize": "^6.37.1",
     "sequelize-cli": "^6.6.2"
   }

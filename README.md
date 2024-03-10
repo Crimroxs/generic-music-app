@@ -1,5 +1,5 @@
 ## Generic Music Search App
-GMSP or Generic Music Search App is just that, a music searching app that uses the [Spotify Web API](https://developer.spotify.com/documentation/web-api) to search for Artists, Albums, and Tracks.
+GMSA or Generic Music Search App is just that, a music searching app that uses the [Spotify Web API](https://developer.spotify.com/documentation/web-api) to search for Artists, Albums, and Tracks.
 
 ## Prerequisites
  * Chrome/Firefox/Safari/Edge >= Latest major versions or Developer versions
