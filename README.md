@@ -17,12 +17,16 @@ First, the project needs a proper `.env` file filled out. You can use the `.env.
  * `API_URL` ...
  * `DATABASE_URL` is the mongodb url, e.g. `mongodb://127.0.0.1/library`
 
-To install and start each part:
+To install and start the server-side:
 
 	cd server
+	npm i
 	npm run watch
 
+To install and start the client-side:
+
 	cd ../client
+	npm i
 	npm run start
 
 ## Links
