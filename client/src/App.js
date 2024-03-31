@@ -33,13 +33,10 @@ function App() {
 	};
 
 	return (
-		<main className="wrapper">
+		<main className="container">
 			<nav className="header">
 				<span className="logo">
 					<PiSpotifyLogoFill />
-				</span>
-				<span className="search">
-					<span className="searchIcon"><PiMagnifyingGlassBold /></span> <Searchbar onSubmit={handleSearch} />
 				</span>
 				<span className="navIcons">
 					<a href="/">
@@ -58,6 +55,9 @@ function App() {
 							</a>
 						</>
 					)}
+				</span>
+				<span className="search">
+					<span className="searchIcon"><PiMagnifyingGlassBold /></span> <Searchbar onSubmit={handleSearch} />
 				</span>
 			</nav>
 			<section>
