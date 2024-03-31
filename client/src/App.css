@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+
+:root {
+	--background-color: #0d0c0c;
+	--container-color: #1c1b1b;
+	--hover-color: #222;
+	--primary-font-color: #dadada;
+	--secondary-font-color: #797979;
+	--tertiary-font-color: #a7a7a7;
+	--accent-color: #16a349;
+	--border-color: #5b5b5b;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html {
+	overflow-x: auto;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	display: grid;
+	width: 100%;
+	min-height: 100vh;
+	place-items: center;
+	position: relative;
+	background-color: var(--background-color);
+	font: 1rem "Montserrat", sans-serif;
+	color: var(--primary-font-color);
+}
+
+input, button, textarea, select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+a {
+	cursor: pointer;
+	transition: 0.3s;
+	text-decoration: none;
+	color: inherit;
+	&:hover {
+		color: var(--accent-color);
+	}
+}
+
+.wrapper {
+	text-align: left;
+	width: calc(100vw - 25px);
+	height: calc(100vh - 25px);
+	margin: 0 auto;
+	background: transparent;
+	position: relative;
+	overflow-y: scroll;
+	background: var(--container-color);
+	border: 1px solid black;
+	border-radius: 0.5rem;
+	z-index: 2;
+	display: flex;
+	flex-direction: column;
+}
+
+nav {
+	padding: 0.5rem;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 2rem;
+	background-color: var(--accent-color);
+	& .logo {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		font-size: 3rem;
+		margin: 0.5rem;
+	}
+	& .navIcons a {
+		font-size: 2rem;
+		margin: 0.5rem;
+	}
+	& .search {
+		margin: 0.5rem 3rem;
+		flex-grow: 2;
+		display: flex;
+		& input {
+			border-radius: 30px;
+			padding: 15px;
+			width: 100%;
+			border: 1px solid var(--border-color);
+			background: none;
+			-webkit-appearance: none;
+			box-shadow: none !important;
+			outline: 0;
+			color: var(--primary-font-color);
+		}
+	}
+}
+
+section {
+	padding: 1.5rem;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	width: 100%;
+}
+
+.no-results p {
+	color: var(--secondary-font-color);
+}
+
+.login {
+	display: grid;
+	place-items: center;
+	height: 100%;
+	width: 100%;
+	& form {
+		min-width: 400px;
+	}
+	& input {
+		display: block;
+		border-radius: 30px;
+		margin: 0.5rem;
+		padding: 15px;
+		width: 100%;
+		background: none;
+		-webkit-appearance: none;
+		box-shadow: none !important;
+		color: var(--primary-font-color);
+		border: 1px solid var(--border-color);
+	}
+}
+input[type="submit"] {
+	background: var(--accent-color);
+	width: 100%;
+	color: white;
+}
+
+#search {
+	background-color: var(--accent-color);
+	border-color: transparent;
+	font: 1rem "Montserrat", sans-serif;
+}
+.searchform {
+	width: 50%;
+}
+
+#search::placeholder, #search::-moz-placeholder {
+	color: white;
+}
+
+#search:hover, #search:focus {
+	background-color: rgba(0,0,0,0.2);
+}
+
+.searchIcon {
+	font-size: 1.5rem;
+	display: flex;
+	margin: auto 0;
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	min-width: 170px;
+	border-radius: 5px;
+	padding: 10px;
+	margin-bottom: 5px;
+	& .card-img img {
+		width: 150px;
+		height: 150px;
+		border-radius: 8px;
+		border: 1px solid var(--border-color);
+	}
+	& .card-name {
+		text-overflow: ellipsis;
+		overflow: hidden;
+		white-space: nowrap;
+		max-height: 50px;
+		width: 150px;
+		font-size: 0.8rem;
+		margin-block: .5em;
+	}
+	& .card-date {
+		max-height: 50px;
+		width: 150px;
+		font-size: 0.75rem;
+	}
+}
+.card:hover {
+	background-color: var(--hover-color);
+}
+
+.cards {
+	display: flex;
+	gap: .5rem;
+	overflow-x: auto;
+}
+
+.gradientLine {
+	display: block;
+	margin: 3rem 2rem;
+	border: none;
+	height: 1px;
+	background: var(--background-color);
+}

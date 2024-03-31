@@ -4,6 +4,8 @@
   "description": "GMSA or Generic Music Search App is just that, a music searching app that uses the [Spotify Web API](https://developer.spotify.com/documentation/web-api) to search for Artists, Albums, and Tracks.",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
+    "watch": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",

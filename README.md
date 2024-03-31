@@ -10,12 +10,13 @@ GMSA or Generic Music Search App is just that, a music searching app that uses t
 ## Getting Started
 The project needs a proper `.env` file filled out. You can use the `.env.dist` as the base file and simply rename it to `.env` but information is still needed to be filled.
 
- * `PORT` and `PORT_GUI` are already given (8001 and 8000 respectively) but are available here if the default ports are already in use. Easy switch. You might also need to adjust `REDIRECT_URI`
  * `MUSIC_ID` is the Spotify API ID
  * `MUSIC_SECRET` is the Spotify API secret key
- * `REDIRECT_URI` is the redirect that the login goes to after Spotify, `http://localhost:8000/` is an example
+ * `REDIRECT_URI` is the redirect that the login goes to after Spotify, `'http://localhost:8001/spotify/v1/callback` is an example
  * `API_URL` ...
  * `DATABASE_URL` is the mongodb url, e.g. `mongodb://127.0.0.1/library`
+
+Leave `PORT` and `PORT_GUI` intact.
 
 To install and start the server-side:
 
@@ -23,9 +24,9 @@ To install and start the server-side:
 	npm i
 	npm run watch
 
-To install and start the client-side:
+Open another instance of command prompt to install and start the client-side:
 
-	cd ../client
+	cd client
 	npm i
 	npm run start
 

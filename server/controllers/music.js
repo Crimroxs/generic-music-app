@@ -15,7 +15,7 @@ const login = (req, res) => {
 
 		const scope = "user-read-private user-read-email";
 		const queryParams = querystring.stringify({
-			MUSIC_ID: MUSIC_ID,
+			client_id: MUSIC_ID,
 			response_type: "code",
 			redirect_uri: REDIRECT_URI,
 			scope: scope,
